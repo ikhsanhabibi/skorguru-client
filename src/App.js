@@ -8,6 +8,7 @@ import { createMuiTheme } from "@material-ui/core/styles";
 
 //Pages
 import home from "./pages/home";
+import forum from "./pages/forum";
 import login from "./pages/login";
 import signup from "./pages/signup";
 
@@ -26,6 +27,7 @@ class App extends Component {
             <Navbar />
             <Switch>
               <Route exact path="/" component={home}></Route>
+              <Route exact path="/forum" component={forum}></Route>
               <Route exact path="/login" component={login}></Route>
               <Route exact path="/signup" component={signup}></Route>
             </Switch>
